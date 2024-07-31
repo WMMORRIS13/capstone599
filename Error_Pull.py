@@ -7,7 +7,7 @@ from io import StringIO, BytesIO
 from datetime import datetime
 
 # Define your API app token
-app_token = "YourAPIkey"
+app_token = "YourAPIkey "
 client = Socrata("data.wa.gov", app_token)
 
 async def fetch(session, url):
