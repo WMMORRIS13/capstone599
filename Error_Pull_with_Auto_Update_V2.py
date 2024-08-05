@@ -62,7 +62,7 @@ async def fetch_all_datasets(urls_with_errors):
 # Update description function using Selenium
 def update_description(dataset_id, new_description):
     options = Options()
-    options.headless = False  # Change to True to run headless Chrome
+    options.headless = True  # Change to False if you want the window to pop up
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     try:
